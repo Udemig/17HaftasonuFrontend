@@ -18,8 +18,164 @@
 
 <body>
 
-    <div class="bg-success">Merhaba dunya</div>
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+    </ul>
 
+
+    <button type="button" class="btn-solid theme-primary" data-bs-toggle="dialog" data-bs-target="#exampleDialog">
+        Open dialog
+    </button>
+
+    <dialog class="dialog" id="exampleDialog">
+        <div class="dialog-header">
+            <h1 class="dialog-title">Dialog title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+        </div>
+        <div class="dialog-body">
+            <p>This is a native dialog element. It uses the browser’s built-in modal behavior for accessibility and
+                focus management.</p>
+        </div>
+        <div class="dialog-footer">
+            <button type="button" class="btn-solid theme-secondary" data-bs-dismiss="dialog">Close</button>
+            <button type="button" class="btn-solid theme-primary">Save changes</button>
+        </div>
+    </dialog>
+
+    <div id="carouselStacked" class="carousel slide">
+        <div class="d-flex justify-content-between align-items-center">
+            <h5 class="mb-0">Top controls</h5>
+            <div>
+                <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselStacked" data-bs-slide="prev">
+                    <span class="carousel-icon-prev" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselStacked" data-bs-slide="next">
+                    <span class="carousel-icon-next" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="carousel-inner rounded-5">
+            <div class="carousel-item active">
+                <img src="resim.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="resim2.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="resim.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+
+
+    <div>selamlarrr</div> <br />
+    <button class="btn-solid theme-primary position-relative">
+        Mesajlar <span
+            class="badge theme-danger position-absolute top-0 start-100 translate-middle rounded-pill border-bg">
+            4
+        </span>
+    </button>
+
+    <button class="btn btn-styled theme-accent">bana tikla</button>
+
+    <section class="card" style="max-width: 320px;">
+        <img src="resim.jpg" alt="" width="300" class="card-img-top">
+        <div class="card-body">
+            <h4 class="card-title">Kart basligi</h4>
+            <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt neque dolor nulla commodi iusto ipsa
+                error illo atque voluptatum quasi natus perspiciatis sapiente, architecto voluptates dolores
+                reprehenderit beatae ipsam quidem.
+            </p>
+            <a href="" class="btn-solid theme-success">Daha Fazla</a>
+        </div>
+    </section>
+
+    <!-- 
+    576 sm
+    768 md
+    1024 l
+    1280 xl
+    1536 xxl
+
+    
+    -->
+
+    <div class="bg-warning row">
+        <div class="bg-success md:col-6 sm:col-2">Merhaba </div>
+        <div class="bg-danger md:col-3 sm:col-2">Merhaba </div>
+        <div class="bg-primary  md:col-3 sm:col-2">Merhaba </div>
+    </div>
+
+    <img src="resim.jpg" alt="" width="300" class="img-fluid img-thumbnail rounded float-end">
+    <img src="resim.jpg" alt="" width="300" class="img-fluid img-thumbnail rounded mx-auto d-block">
+
+    <div class="form-field">
+        <label for="" class="form-label">Email adresi</label>
+        <input type="text" class="form-control">
+        <div class="form-text">
+            Dikkatli doldur
+        </div>
+    </div>
+
+    <div class="accordion">
+        <details class="accordion-item" name="accordionExample">
+            <summary class="accordion-header">
+                Accordion Item #1
+                <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none"
+                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m2 5 6 6 6-6" />
+                </svg>
+            </summary>
+            <div class="accordion-body">
+                <strong>This is the first item’s accordion body.</strong> It is shown by default because the
+                <code>open</code> attribute is present. The native <code>&lt;details&gt;</code> element handles all the
+                show/hide logic without any JavaScript. You can put any HTML content within the
+                <code>.accordion-body</code>.
+            </div>
+        </details>
+        <details class="accordion-item" name="accordionExample">
+            <summary class="accordion-header">
+                Accordion Item #2
+                <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none"
+                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m2 5 6 6 6-6" />
+                </svg>
+            </summary>
+            <div class="accordion-body">
+                <strong>This is the second item’s accordion body.</strong> The <code>name</code> attribute groups this
+                with other accordion items. When you open this item, any other open item in the same group will close
+                automatically.
+            </div>
+        </details>
+        <details class="accordion-item" name="accordionExample">
+            <summary class="accordion-header">
+                Accordion Item #3
+                <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none"
+                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m2 5 6 6 6-6" />
+                </svg>
+            </summary>
+            <div class="accordion-body">
+                <strong>This is the third item’s accordion body.</strong> This exclusive accordion behavior is built
+                into the browser—no Bootstrap JavaScript required. Just use matching <code>name</code> attributes on
+                your <code>&lt;details&gt;</code> elements.
+            </div>
+        </details>
+    </div>
 
 </body>
 
